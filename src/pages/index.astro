@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Clinical Research Compliance Law Firm | EEDEE Law"
+  description="EEDEE Law bridges legal, regulatory, and operational realities in clinical research. We help academic centers, cancer institutes, and trial vendors move faster, with compliance that enables innovation."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="30+ Years of Clinical Research Experience\nCompliance that empowers"
+      subtitle="EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. With over 30 years of hands-on clinical research experience, we turn compliance roadblocks into pathways forward."
+      backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_1.png"
+    />
+    
+    <Services />
+    
+    <About />
+    
+    <!-- Approach Preview -->
+    <section class="section-spacing bg-white">
+      <div class="container-custom">
+        <div class="text-center mb-12 fade-in">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            At EEDEE Law, we believe in creativity within compliance
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            We explore every option before you choose, and make the law work for research, not against it.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Goals-driven -->
+          <div class="approach-card text-center p-6 fade-in stagger-1">
+            <div class="mb-4">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_6.png" 
+                alt="Goals" 
+                class="w-10 h-10 mx-auto"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Goals-driven</h3>
+            <p class="text-gray-600 text-sm">Lead with possibility instead of barriers</p>
+          </div>
+          
+          <!-- Research-first -->
+          <div class="approach-card text-center p-6 fade-in stagger-2">
+            <div class="mb-4">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296683/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_7.png" 
+                alt="Research" 
+                class="w-10 h-10 mx-auto"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Research-first</h3>
+            <p class="text-gray-600 text-sm">Operational reality over regulatory theory</p>
+          </div>
+          
+          <!-- Constraints-empowered -->
+          <div class="approach-card text-center p-6 fade-in stagger-3">
+            <div class="mb-4">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_8.png" 
+                alt="Compliance" 
+                class="w-10 h-10 mx-auto"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Constraints-empowered</h3>
+            <p class="text-gray-600 text-sm">We acknowledge constraints instead of demanding perfection</p>
+          </div>
+          
+          <!-- Decision-focused -->
+          <div class="approach-card text-center p-6 fade-in stagger-4">
+            <div class="mb-4">
+              <img 
+                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_9.png" 
+                alt="Decision" 
+                class="w-10 h-10 mx-auto"
+              />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Decision-focused</h3>
+            <p class="text-gray-600 text-sm">We provide you with all the options before you decide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>
