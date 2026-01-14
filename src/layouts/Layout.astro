@@ -4,30 +4,23 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = 'Life sciences attorney with 30+ years of clinical research experience. We turn compliance roadblocks into pathways forward for AMCs, cancer centers, research sites, and clinical trial technology vendors.' } = Astro.props;
+const { title, description = 'Life sciences attorney with 30+ years of clinical research experience. We turn compliance roadblocks into pathways forward.' } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://eedeelaw.com/" />
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://eedeelaw.com/" />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
+    <meta property="og:type" content="website" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,6 +29,9 @@ const { title, description = 'Life sciences attorney with 30+ years of clinical 
   </head>
   <body>
     <slot />
-    <script src="/src/scripts/animations.ts"></script>
   </body>
 </html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

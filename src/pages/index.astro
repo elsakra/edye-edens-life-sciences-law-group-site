@@ -1,49 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import TrustBar from '../components/TrustBar.astro';
 import Approach from '../components/Approach.astro';
 import Services from '../components/Services.astro';
-import Expertise from '../components/Expertise.astro';
 import Leadership from '../components/Leadership.astro';
-import Contact from '../components/Contact.astro';
+import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
 ---
 
-<Layout title="Edye Edens Life Sciences Law Group - Clinical Research Legal Counsel">
-  <!-- Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass">
-    <nav class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
-      <div class="flex items-center justify-between">
-        <a href="/" class="flex items-center">
-          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" alt="EEDEE Law" class="h-10 w-auto" />
-        </a>
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#approach" class="text-white hover:text-blue-400 transition-colors">Our Approach</a>
-          <a href="#services" class="text-white hover:text-blue-400 transition-colors">Services</a>
-          <a href="#leadership" class="text-white hover:text-blue-400 transition-colors">Leadership</a>
-          <a href="#contact" class="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-emerald-600 text-white font-medium rounded-full hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">Start a Conversation</a>
-        </div>
-        <!-- Mobile menu button -->
-        <button class="md:hidden text-white">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </header>
-  
+<Layout title="EEDEE Law - Life Sciences Legal Counsel | Clinical Research Compliance">
   <main>
     <Hero />
-    <TrustBar />
     <Approach />
     <Services />
-    <Expertise />
     <Leadership />
-    <Contact />
+    <CTA />
+    <Footer />
   </main>
-  
-  <Footer />
 </Layout>
+
+<script src="../scripts/animations.ts"></script>

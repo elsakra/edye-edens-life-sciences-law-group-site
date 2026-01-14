@@ -5,20 +5,22 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      animation: {
-        'fade-up': 'fadeUp 0.6s ease-out',
-        'fade-in': 'fadeIn 0.6s ease-out',
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '120': '30rem',
+        '160': '40rem'
       },
-      keyframes: {
-        fadeUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '6rem',
+        '9xl': '8rem'
       },
+      letterSpacing: {
+        'tighter': '-0.02em',
+        'extra-tight': '-0.04em',
+        'loose': '0.05em'
+      }
     },
   },
   plugins: [],
