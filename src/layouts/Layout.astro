@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = 'EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials.' } = Astro.props;
+const { title, description = 'Life sciences attorney with 30+ years of clinical research experience. We turn compliance roadblocks into pathways forward for AMCs, cancer centers, research sites, and clinical trial technology vendors.' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -17,17 +17,25 @@ const { title, description = 'EEDEE Law bridges the gap between legal and regula
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eedeelaw.com/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://eedeelaw.com/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
   </head>
   <body>
     <slot />
+    <script src="/src/scripts/animations.ts"></script>
   </body>
 </html>
