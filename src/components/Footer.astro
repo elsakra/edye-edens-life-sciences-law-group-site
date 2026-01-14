@@ -1,63 +1,55 @@
 ---
-// No props needed for footer
+const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-900 text-white">
-  <div class="container-custom section-spacing">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      <!-- Company Info -->
+<footer class="bg-brand-dark py-16">
+  <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      <!-- Logo and tagline -->
       <div class="md:col-span-2">
-        <img 
-          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" 
-          alt="EEDEE Law" 
-          class="h-8 w-auto mb-4"
-        />
-        <p class="text-gray-300 mb-6 max-w-md">
-          EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. With over 30 years of hands-on clinical research experience.
+        <a href="/" class="inline-block mb-4">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" alt="EEDEE Law" class="h-10" />
+        </a>
+        <p class="text-gray-400 max-w-sm">
+          Bridging the gap between legal compliance and the operational realities of clinical trials.
         </p>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
-            <img 
-              src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296685/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_13.png" 
-              alt="LinkedIn" 
-              class="h-6 w-6"
-            />
-          </a>
-        </div>
       </div>
       
       <!-- Quick Links -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-2">
-          <li><a href="/approach" class="text-gray-300 hover:text-white transition-colors duration-200">Our Approach</a></li>
-          <li><a href="/services" class="text-gray-300 hover:text-white transition-colors duration-200">Services</a></li>
-          <li><a href="/leadership" class="text-gray-300 hover:text-white transition-colors duration-200">Leadership</a></li>
-          <li><a href="/contact" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Our Approach</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+          <li><a href="#leadership" class="text-gray-400 hover:text-white transition-colors">Leadership</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
         </ul>
       </div>
       
-      <!-- Services -->
+      <!-- Legal -->
       <div>
-        <h3 class="text-lg font-semibold mb-4">Services</h3>
+        <h3 class="text-white font-semibold mb-4">Legal</h3>
         <ul class="space-y-2">
-          <li><a href="/services#academic" class="text-gray-300 hover:text-white transition-colors duration-200">Academic Medical Centers</a></li>
-          <li><a href="/services#cancer" class="text-gray-300 hover:text-white transition-colors duration-200">Cancer Centers</a></li>
-          <li><a href="/services#sites" class="text-gray-300 hover:text-white transition-colors duration-200">Research Sites</a></li>
-          <li><a href="/services#tech" class="text-gray-300 hover:text-white transition-colors duration-200">Tech Vendors</a></li>
+          <li><a href="https://www.eedeelaw.com/policy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="https://www.eedeelaw.com/accessibility" class="text-gray-400 hover:text-white transition-colors">Accessibility Statement</a></li>
+          <li><a href="https://www.eedeelaw.com/terms" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
         </ul>
       </div>
     </div>
     
-    <div class="border-t border-gray-800 mt-12 pt-8">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm">
-          © 2024 Edye Edens Life Sciences Law Group. All rights reserved.
-        </p>
-        <div class="flex space-x-6 mt-4 md:mt-0">
-          <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Privacy Policy</a>
-          <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Terms of Service</a>
-        </div>
+    <!-- Bottom section -->
+    <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-gray-400 text-sm">
+        © {currentYear} EEDEE Law. All rights reserved.
+      </p>
+      
+      <div class="flex items-center gap-4">
+        <span class="text-gray-400 text-sm">Connect</span>
+        <a href="https://www.linkedin.com/company/eedee-law/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
       </div>
     </div>
   </div>

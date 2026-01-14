@@ -1,83 +1,85 @@
 import { animate, inView, scroll } from '@motionone/dom';
 
-// Fade in animations on scroll
-function initScrollAnimations() {
-  const elements = document.querySelectorAll<HTMLElement>('.fade-in');
-  
-  elements.forEach((element, index) => {
-    inView(element, () => {
-      animate(
-        element,
-        { opacity: [0, 1], transform: ['translateY(30px)', 'translateY(0px)'] },
-        { duration: 0.6, delay: index * 0.1 }
-      );
-    });
-  });
-}
+// Check for reduced motion preference
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// Navbar scroll effect
-function initNavbarScroll() {
-  const navbar = document.querySelector<HTMLElement>('.navbar');
-  if (!navbar) return;
-  
-  scroll(({ y }) => {
-    if (y.current > 100) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
+if (!prefersReducedMotion) {
+  // Hero animations
+  document.addEventListener('DOMContentLoaded', () => {
+    // Animate hero heading
+    const heroHeading = document.querySelector('.hero-animate');
+    if (heroHeading) {
+      animate(
+        heroHeading,
+        { opacity: [0, 1], transform: ['translateY(30px)', 'translateY(0)'] },
+        { duration: 0.8, easing: 'ease-out' }
+      );
+    }
+
+    // Animate hero subheading
+    const heroSubheading = document.querySelector('.hero-sub-animate');
+    if (heroSubheading) {
+      animate(
+        heroSubheading,
+        { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'] },
+        { duration: 0.8, delay: 0.2, easing: 'ease-out' }
+      );
+    }
+
+    // Animate CTA button
+    const heroCta = document.querySelector('.hero-cta-animate');
+    if (heroCta) {
+      animate(
+        heroCta,
+        { opacity: [0, 1], transform: ['scale(0.95)', 'scale(1)'] },
+        { duration: 0.6, delay: 0.4, easing: 'ease-out' }
+      );
     }
   });
-}
 
-// Button hover effects
-function initButtonEffects() {
-  const buttons = document.querySelectorAll<HTMLElement>('.btn-primary, .btn-secondary');
-  
-  buttons.forEach(button => {
-    button.addEventListener('mouseenter', () => {
-      animate(button, { scale: 1.05 }, { duration: 0.2 });
-    });
-    
-    button.addEventListener('mouseleave', () => {
-      animate(button, { scale: 1 }, { duration: 0.2 });
-    });
-  });
-}
-
-// Card hover effects
-function initCardEffects() {
-  const cards = document.querySelectorAll<HTMLElement>('.service-card, .approach-card');
-  
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
+  // Scroll animations for sections
+  const sections = document.querySelectorAll('.fade-in-section');
+  sections.forEach((section) => {
+    inView(section, () => {
       animate(
-        card,
-        { transform: 'translateY(-8px)', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' },
-        { duration: 0.3 }
+        section,
+        { opacity: [0, 1], transform: ['translateY(40px)', 'translateY(0)'] },
+        { duration: 0.8, easing: 'ease-out' }
       );
-    });
-    
-    card.addEventListener('mouseleave', () => {
-      animate(
-        card,
-        { transform: 'translateY(0px)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' },
-        { duration: 0.3 }
-      );
-    });
+    }, { margin: '-100px' });
   });
-}
 
-// Initialize all animations when DOM is ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    initScrollAnimations();
-    initNavbarScroll();
-    initButtonEffects();
-    initCardEffects();
+  // Staggered animations for cards
+  const cardContainers = document.querySelectorAll('.stagger-cards');
+  cardContainers.forEach((container) => {
+    inView(container, () => {
+      const cards = container.querySelectorAll('.card');
+      animate(
+        cards,
+        { opacity: [0, 1], transform: ['translateY(30px)', 'translateY(0)'] },
+        { duration: 0.6, delay: (i) => i * 0.1, easing: 'ease-out' }
+      );
+    }, { margin: '-50px' });
   });
-} else {
-  initScrollAnimations();
-  initNavbarScroll();
-  initButtonEffects();
-  initCardEffects();
+
+  // Navbar background on scroll
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    scroll(({ y }) => {
+      if (y.current > 50) {
+        navbar.classList.add('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+      } else {
+        navbar.classList.remove('bg-white/95', 'backdrop-blur-md', 'shadow-sm');
+      }
+    });
+  }
+
+  // Parallax effect for decorative elements
+  const parallaxElements = document.querySelectorAll('.parallax');
+  parallaxElements.forEach((element) => {
+    scroll(animate(element, { transform: ['translateY(0)', 'translateY(-100px)'] }), {
+      target: element,
+      offset: ['start end', 'end start']
+    });
+  });
 }

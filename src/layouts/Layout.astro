@@ -1,15 +1,10 @@
 ---
-import '../styles/global.css';
-
 export interface Props {
   title: string;
   description?: string;
-  image?: string;
 }
 
-const { title, description = 'EEDEE Law bridges legal, regulatory, and operational realities in clinical research. We help academic centers, cancer institutes, and trial vendors move faster, with compliance that enables innovation.', image = '/favicon.svg' } = Astro.props;
-
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description = 'EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials.' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -19,45 +14,26 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content="https://eedeelaw.com/" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(image, Astro.url)} />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:url" content="https://eedeelaw.com/" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={new URL(image, Astro.url)} />
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LegalService",
-        "name": "Edye Edens Life Sciences Law Group",
-        "alternateName": "EEDEE Law",
-        "description": "Clinical Research Compliance Law Firm specializing in academic medical centers, cancer centers, and clinical trial technology vendors.",
-        "url": "https://eedeelaw.com",
-        "areaServed": "United States",
-        "serviceType": ["Clinical Research Compliance", "HRPP Consulting", "IRB Services", "Regulatory Affairs"],
-        "founder": {
-          "@type": "Person",
-          "name": "Edye Edens"
-        }
-      }
-    </script>
-    
-    <title>{title}</title>
   </head>
-  <body class="antialiased">
+  <body>
     <slot />
-    <script src="/src/scripts/animations.ts" type="module"></script>
   </body>
 </html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

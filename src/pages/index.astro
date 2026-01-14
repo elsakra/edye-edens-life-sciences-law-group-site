@@ -1,100 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import Services from '../components/Services.astro';
+import TrustBar from '../components/TrustBar.astro';
 import About from '../components/About.astro';
-import Contact from '../components/Contact.astro';
+import Services from '../components/Services.astro';
+import Leadership from '../components/Leadership.astro';
+import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout 
-  title="Clinical Research Compliance Law Firm | EEDEE Law"
-  description="EEDEE Law bridges legal, regulatory, and operational realities in clinical research. We help academic centers, cancer institutes, and trial vendors move faster, with compliance that enables innovation."
->
-  <Header />
-  
-  <main>
-    <Hero 
-      title="30+ Years of Clinical Research Experience\nCompliance that empowers"
-      subtitle="EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. With over 30 years of hands-on clinical research experience, we turn compliance roadblocks into pathways forward."
-      backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_1.png"
-    />
-    
-    <Services />
-    
-    <About />
-    
-    <!-- Approach Preview -->
-    <section class="section-spacing bg-white">
-      <div class="container-custom">
-        <div class="text-center mb-12 fade-in">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            At EEDEE Law, we believe in creativity within compliance
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            We explore every option before you choose, and make the law work for research, not against it.
-          </p>
+<Layout title="Edye Edens Life Sciences Law Group - Compliance that Empowers">
+  <!-- Navigation -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="/" class="flex items-center">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" alt="EEDEE Law" class="h-10" />
+        </a>
+        
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Our Approach</a>
+          <a href="#services" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Services</a>
+          <a href="#leadership" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Leadership</a>
+          <a href="#contact" class="btn-primary">Start a Conversation</a>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Goals-driven -->
-          <div class="approach-card text-center p-6 fade-in stagger-1">
-            <div class="mb-4">
-              <img 
-                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_6.png" 
-                alt="Goals" 
-                class="w-10 h-10 mx-auto"
-              />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Goals-driven</h3>
-            <p class="text-gray-600 text-sm">Lead with possibility instead of barriers</p>
-          </div>
-          
-          <!-- Research-first -->
-          <div class="approach-card text-center p-6 fade-in stagger-2">
-            <div class="mb-4">
-              <img 
-                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296683/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_7.png" 
-                alt="Research" 
-                class="w-10 h-10 mx-auto"
-              />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Research-first</h3>
-            <p class="text-gray-600 text-sm">Operational reality over regulatory theory</p>
-          </div>
-          
-          <!-- Constraints-empowered -->
-          <div class="approach-card text-center p-6 fade-in stagger-3">
-            <div class="mb-4">
-              <img 
-                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_8.png" 
-                alt="Compliance" 
-                class="w-10 h-10 mx-auto"
-              />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Constraints-empowered</h3>
-            <p class="text-gray-600 text-sm">We acknowledge constraints instead of demanding perfection</p>
-          </div>
-          
-          <!-- Decision-focused -->
-          <div class="approach-card text-center p-6 fade-in stagger-4">
-            <div class="mb-4">
-              <img 
-                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296684/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_9.png" 
-                alt="Decision" 
-                class="w-10 h-10 mx-auto"
-              />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Decision-focused</h3>
-            <p class="text-gray-600 text-sm">We provide you with all the options before you decide</p>
-          </div>
-        </div>
+        <!-- Mobile menu button -->
+        <button class="md:hidden p-2" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
       </div>
-    </section>
-    
-    <Contact />
+    </div>
+  </nav>
+  
+  <!-- Mobile menu -->
+  <div class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
+    <div class="p-6">
+      <button class="absolute top-6 right-6" id="mobile-menu-close">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      
+      <div class="mt-16 space-y-6">
+        <a href="#services" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Our Approach</a>
+        <a href="#services" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Services</a>
+        <a href="#leadership" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Leadership</a>
+        <a href="#contact" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    <Hero />
+    <TrustBar />
+    <About />
+    <Services />
+    <Leadership />
+    <CTA />
   </main>
   
   <Footer />
+  
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton?.addEventListener('click', () => {
+      mobileMenu?.classList.remove('translate-x-full');
+    });
+    
+    mobileMenuClose?.addEventListener('click', () => {
+      mobileMenu?.classList.add('translate-x-full');
+    });
+    
+    // Close mobile menu on link click
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.add('translate-x-full');
+      });
+    });
+  </script>
+  
+  <script>
+    import '../scripts/animations.ts';
+  </script>
 </Layout>

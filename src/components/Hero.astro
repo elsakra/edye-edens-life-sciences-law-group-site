@@ -1,65 +1,53 @@
 ---
-export interface Props {
-  title: string;
-  subtitle?: string;
-  ctaText?: string;
-  ctaLink?: string;
-  backgroundImage?: string;
-}
-
-const { 
-  title, 
-  subtitle, 
-  ctaText = "Start a Conversation", 
-  ctaLink = "/contact",
-  backgroundImage
-} = Astro.props;
 ---
 
-<section class="relative bg-gray-50 section-spacing overflow-hidden">
-  <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-5">
-    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-light via-white to-brand-light">
+  <!-- Decorative background element -->
+  <div class="absolute inset-0 flex items-center justify-center opacity-5">
+    <div class="w-96 h-96 rounded-full border-8 border-brand-red transform rotate-45 parallax"></div>
   </div>
   
-  <!-- Background Image -->
-  {backgroundImage && (
-    <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10">
-      <img 
-        src={backgroundImage} 
-        alt="" 
-        class="w-full h-full object-cover"
-      />
-    </div>
-  )}
+  <!-- Scattered image tiles -->
+  <div class="absolute top-20 left-10 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl transform -rotate-6 parallax">
+    <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296685/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_11.jpg" alt="Clinical research professional" class="w-full h-full object-cover" />
+  </div>
   
-  <div class="container-custom relative">
+  <div class="absolute bottom-20 right-10 w-56 h-72 rounded-2xl overflow-hidden shadow-2xl transform rotate-6 parallax">
+    <div class="w-full h-full bg-gradient-to-br from-brand-burgundy to-brand-red opacity-90"></div>
+  </div>
+  
+  <div class="absolute top-40 right-20 w-40 h-40 rounded-2xl bg-brand-red/10 transform rotate-12"></div>
+  
+  <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center max-w-5xl mx-auto">
-      <h1 class="hero-title fade-in">
-        {title}
+      <div class="mb-8">
+        <span class="inline-block px-6 py-2 text-sm font-medium text-brand-red bg-red-50 rounded-full">30+ Years of Clinical Research Experience</span>
+      </div>
+      
+      <h1 class="hero-heading font-serif text-brand-dark mb-8 hero-animate">
+        Compliance that<br />
+        <span class="text-brand-red">empowers</span>
       </h1>
       
-      {subtitle && (
-        <p class="hero-subtitle fade-in stagger-1">
-          {subtitle}
-        </p>
-      )}
+      <p class="text-xl md:text-2xl text-brand-gray leading-relaxed mb-12 max-w-3xl mx-auto hero-sub-animate">
+        EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. We turn compliance roadblocks into pathways forward.
+      </p>
       
-      <div class="mt-8 fade-in stagger-2">
-        <a href={ctaLink} class="btn-primary inline-block">
-          {ctaText}
+      <div class="flex flex-col sm:flex-row gap-4 justify-center hero-cta-animate">
+        <a href="#contact" class="btn-primary">
+          Start a Conversation
+        </a>
+        <a href="#services" class="btn-secondary">
+          Our Services →
         </a>
       </div>
     </div>
   </div>
-</section>
-
-<style>
-  .hero-title {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6;
-  }
   
-  .hero-subtitle {
-    @apply text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed;
-  }
-</style>
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/0 transform -translate-x-1/0 animate-bounce">
+    <svg class="w-6 h-6 text-brand-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>
