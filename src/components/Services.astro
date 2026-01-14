@@ -1,224 +1,140 @@
 ---
 ---
 
-<section id="services" class="relative py-24 md:py-32 bg-slate-950 overflow-hidden">
-  <!-- Background texture -->
-  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_50%)]" aria-hidden="true"></div>
-  <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" aria-hidden="true"></div>
-  
-  <div class="relative z-10 max-w-7xl mx-auto px-6">
+<section id="services" class="py-24 md:py-32 px-6 bg-stone-50">
+  <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16 animate-on-scroll">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6">How we can help</h2>
-      <p class="text-xl text-gray-400 max-w-3xl mx-auto">We offer specialized services for sites, AMCs, HRPPs, and clinical trial tech vendors.</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-stone-900">
+        How we can help
+      </h2>
+      <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+        We offer specialized services for sites, AMCs, HRPPs, and clinical trial tech vendors.
+      </p>
     </div>
     
-    <div class="space-y-8">
+    <div class="grid md:grid-cols-2 gap-8">
       <!-- Academic Medical Centers -->
-      <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 hover:bg-white/10 hover:border-white/20 transition-all duration-300 animate-on-scroll">
-        <div class="flex items-start gap-6">
-          <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_2.png" alt="" class="w-10 h-10 filter brightness-0 invert" />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-bold text-white mb-4">For Academic Medical Centers & HRPPs</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              Your HRPP is facing AAHRPP accreditation pressure while managing possible layoffs from NIH funding cuts. Institutional red tape slows everything down, and you need counsel who actually understands the difference between a RIO and COI. We've spent over a decade in academic research administration. We speak your language.
-            </p>
-            <div class="grid md:grid-cols-2 gap-4 text-gray-400">
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>HRPP overhauls for AAHRPP accreditation readiness</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>IRB workload analyses and policy reengineering</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Research misconduct investigations</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Crisis management for OHRP/FDA audits</span>
-                </li>
-              </ul>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>RCR and research integrity training</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Technology integration (IRB systems, e-consent)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Data governance under HIPAA, GDPR</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Strategic counsel for VPs of Research</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="bg-white rounded-2xl p-8 shadow-xl shadow-stone-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_2.png" alt="Academic Medical Centers" class="w-12 h-12" />
+          <h3 class="text-2xl font-bold text-stone-900">Academic Medical Centers & HRPPs</h3>
         </div>
+        
+        <p class="text-stone-600 mb-6 leading-relaxed">
+          Your HRPP is facing AAHRPP accreditation pressure while managing possible layoffs from NIH funding cuts. We've spent over a decade in academic research administration. We speak your language.
+        </p>
+        
+        <ul class="space-y-3 text-stone-700">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>HRPP overhauls for AAHRPP accreditation readiness</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>IRB workload analyses and policy reengineering</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Research misconduct investigations and ORI coordination</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Crisis management for OHRP/FDA audits</span>
+          </li>
+        </ul>
       </div>
       
       <!-- Cancer Centers -->
-      <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 hover:bg-white/10 hover:border-white/20 transition-all duration-300 animate-on-scroll">
-        <div class="flex items-start gap-6">
-          <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_3.png" alt="" class="w-10 h-10 filter brightness-0 invert" />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-bold text-white mb-4">For Cancer Centers</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              You're juggling PRMS reviews, DSMC minutes, and another "urgent" sponsor audit, all before lunch. Cancer center operations aren't built for pause, and neither are we. We build systems that stand up to NCI review, hold under FDA pressure, and actually make life inside the CTO workable again.
-            </p>
-            <div class="grid md:grid-cols-2 gap-4 text-gray-400">
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Build and overhaul CTO quality programs</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Lead regulatory compliance audits</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Develop training programs for all staff levels</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Redesign PRMS and DSMC structures</span>
-                </li>
-              </ul>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Negotiate complex oncology contracts</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Privacy and data governance counsel</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Act as interim compliance lead</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Serve as external reviewer or mock-auditor</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="bg-white rounded-2xl p-8 shadow-xl shadow-stone-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_3.png" alt="Cancer Centers" class="w-12 h-12" />
+          <h3 class="text-2xl font-bold text-stone-900">Cancer Centers</h3>
         </div>
+        
+        <p class="text-stone-600 mb-6 leading-relaxed">
+          You're juggling PRMS reviews, DSMC minutes, and another "urgent" sponsor audit. We build systems that stand up to NCI review and hold under FDA pressure.
+        </p>
+        
+        <ul class="space-y-3 text-stone-700">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Build and overhaul Clinical Trials Office quality programs</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Lead regulatory compliance audits and remediation plans</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Redesign PRMS and DSMC structures</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Act as interim compliance lead during transitions</span>
+          </li>
+        </ul>
       </div>
       
-      <!-- Independent Research Sites -->
-      <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 hover:bg-white/10 hover:border-white/20 transition-all duration-300 animate-on-scroll">
-        <div class="flex items-start gap-6">
-          <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_4.png" alt="" class="w-10 h-10 filter brightness-0 invert" />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-bold text-white mb-4">For Independent Research Sites & Site Networks</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              You're negotiating brutal contract terms while building SOPs, managing studies, and praying the next audit doesn't end you. You need fractional support that understands site operations, not a law firm that bills you for learning your business. We've been site-side. We know what you're up against.
-            </p>
-            <div class="grid md:grid-cols-2 gap-4 text-gray-400">
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Complete SOP portfolios and QMS</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Regulatory document management</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>CAPA and internal QA programs</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>CTA negotiations and redlining</span>
-                </li>
-              </ul>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>HIPAA/GDPR privacy programs</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Compliance training for all staff</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>External compliance officer services</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Decentralized trial guidance</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <!-- Research Sites -->
+      <div class="bg-white rounded-2xl p-8 shadow-xl shadow-stone-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_4.png" alt="Research Sites" class="w-12 h-12" />
+          <h3 class="text-2xl font-bold text-stone-900">Independent Research Sites & Networks</h3>
         </div>
+        
+        <p class="text-stone-600 mb-6 leading-relaxed">
+          You're negotiating brutal contract terms while building SOPs and managing studies. You need fractional support that understands site operations. We've been site-side.
+        </p>
+        
+        <ul class="space-y-3 text-stone-700">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Complete SOP portfolios and quality management systems</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>CTA negotiations and contract redlining</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>HIPAA/GDPR privacy and security programs</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>External compliance officer services</span>
+          </li>
+        </ul>
       </div>
       
-      <!-- Clinical Trial Technology Vendors -->
-      <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 hover:bg-white/10 hover:border-white/20 transition-all duration-300 animate-on-scroll">
-        <div class="flex items-start gap-6">
-          <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
-            <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296683/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_5.png" alt="" class="w-10 h-10 filter brightness-0 invert" />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-2xl font-bold text-white mb-4">For Clinical Trial Technology Vendors</h3>
-            <p class="text-gray-300 mb-6 leading-relaxed">
-              Your platform is brilliant, but sponsors want validation documentation and sites want privacy guarantees before they'll sign. Legal counsel keeps shutting you down without understanding what you're actually building. We ask about your innovation first. Then, we show you the compliant path forward.
-            </p>
-            <div class="grid md:grid-cols-2 gap-4 text-gray-400">
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Regulatory frameworks for AI and software</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Vendor agreements and qualification packages</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Algorithm validation and mapping</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Part 11 validation documentation</span>
-                </li>
-              </ul>
-              <ul class="space-y-2">
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Go-to-market compliance positioning</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>Privacy programs for global transfers</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-blue-400 mt-1">•</span>
-                  <span>GCP and data ethics training</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <!-- Tech Vendors -->
+      <div class="bg-white rounded-2xl p-8 shadow-xl shadow-stone-200/50 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-on-scroll">
+        <div class="flex items-center gap-4 mb-6">
+          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296683/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_5.png" alt="Tech Vendors" class="w-12 h-12" />
+          <h3 class="text-2xl font-bold text-stone-900">Clinical Trial Technology Vendors</h3>
         </div>
+        
+        <p class="text-stone-600 mb-6 leading-relaxed">
+          Your platform is brilliant, but sponsors want validation documentation. We ask about your innovation first. Then, we show you the compliant path forward.
+        </p>
+        
+        <ul class="space-y-3 text-stone-700">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Regulatory frameworks for AI and software tools</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Part 11 validation documentation and data integrity</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Go-to-market compliance positioning</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 mt-1">•</span>
+            <span>Privacy programs for HIPAA, GDPR, and global transfers</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
