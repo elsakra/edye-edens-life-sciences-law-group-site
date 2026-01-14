@@ -7,52 +7,10 @@ import Services from '../components/Services.astro';
 import Leadership from '../components/Leadership.astro';
 import CTA from '../components/CTA.astro';
 import Footer from '../components/Footer.astro';
+import '../styles/global.css';
 ---
 
-<Layout title="Edye Edens Life Sciences Law Group - Compliance that Empowers">
-  <!-- Navigation -->
-  <nav class="navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <a href="/" class="flex items-center">
-          <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" alt="EEDEE Law" class="h-10" />
-        </a>
-        
-        <div class="hidden md:flex items-center gap-8">
-          <a href="#services" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Our Approach</a>
-          <a href="#services" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Services</a>
-          <a href="#leadership" class="text-brand-dark hover:text-brand-red transition-colors duration-300">Leadership</a>
-          <a href="#contact" class="btn-primary">Start a Conversation</a>
-        </div>
-        
-        <!-- Mobile menu button -->
-        <button class="md:hidden p-2" id="mobile-menu-button">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- Mobile menu -->
-  <div class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden" id="mobile-menu">
-    <div class="p-6">
-      <button class="absolute top-6 right-6" id="mobile-menu-close">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      
-      <div class="mt-16 space-y-6">
-        <a href="#services" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Our Approach</a>
-        <a href="#services" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Services</a>
-        <a href="#leadership" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Leadership</a>
-        <a href="#contact" class="block text-xl text-brand-dark hover:text-brand-red transition-colors">Contact</a>
-      </div>
-    </div>
-  </div>
-  
+<Layout title="EEDEE Law - Clinical Research Compliance That Empowers">
   <main>
     <Hero />
     <TrustBar />
@@ -60,34 +18,8 @@ import Footer from '../components/Footer.astro';
     <Services />
     <Leadership />
     <CTA />
+    <Footer />
   </main>
   
-  <Footer />
-  
-  <script>
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    mobileMenuButton?.addEventListener('click', () => {
-      mobileMenu?.classList.remove('translate-x-full');
-    });
-    
-    mobileMenuClose?.addEventListener('click', () => {
-      mobileMenu?.classList.add('translate-x-full');
-    });
-    
-    // Close mobile menu on link click
-    const mobileLinks = mobileMenu?.querySelectorAll('a');
-    mobileLinks?.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu?.classList.add('translate-x-full');
-      });
-    });
-  </script>
-  
-  <script>
-    import '../scripts/animations.ts';
-  </script>
+  <script src="../scripts/animations.ts"></script>
 </Layout>

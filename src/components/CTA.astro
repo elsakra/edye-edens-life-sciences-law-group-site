@@ -1,76 +1,45 @@
 ---
 ---
 
-<section id="contact" class="relative overflow-hidden fade-in-section">
-  <!-- Background with gradient -->
-  <div class="absolute inset-0 bg-gradient-to-br from-brand-burgundy via-brand-dark to-brand-burgundy">
-    <!-- Decorative elements -->
-    <div class="absolute bottom-0 left-0 w-full h-64 opacity-10">
-      <svg viewBox="0 0 1440 320" fill="currentColor" class="text-brand-red">
-        <path fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-      </svg>
-    </div>
-  </div>
+<section id="contact" class="relative py-24 md:py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 overflow-hidden">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/100/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20" aria-hidden="true"></div>
   
-  <div class="relative section-padding">
-    <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-serif text-white mb-6">Let's talk about your needs</h2>
-        <div class="max-w-3xl mx-auto space-y-4 text-lg text-gray-300">
-          <p>
-            You know the frustration: hearing "no" without "here's how." Working with lawyers who've never done your job but tell you how to do it. Needing a partner who understands tight budgets, operational realities, and FDA auditors in the room.
-          </p>
-          <p>
-            We get it. Innovation and compliance can coexist, and we know how to make it happen.
-          </p>
-          <p class="font-medium text-white">
-            This is EEDEE Law. We've lived your challenges. Let's solve them together.
-          </p>
-        </div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <div class="animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8">
+        Let's talk about your needs
+      </h2>
+      <div class="space-y-6 text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
+        <p>
+          You know the frustration: hearing "no" without "here's how." Working with lawyers who've never done your job but tell you how to do it. Needing a partner who understands tight budgets, operational realities, and FDA auditors in the room.
+        </p>
+        <p class="font-semibold text-white">
+          We get it. Innovation and compliance can coexist, and we know how to make it happen.
+        </p>
+        <p>
+          This is EEDEE Law. We've lived your challenges. Let's solve them together.
+        </p>
       </div>
       
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 md:p-12">
-          <h3 class="text-2xl font-semibold text-white mb-8">Send a message</h3>
-          
-          <form class="space-y-6">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <input type="text" placeholder="First name" class="w-full premium-input bg-transparent text-white placeholder-gray-400 border-gray-400 focus:border-white" required />
-              </div>
-              <div>
-                <input type="text" placeholder="Last name" class="w-full premium-input bg-transparent text-white placeholder-gray-400 border-gray-400 focus:border-white" required />
-              </div>
-            </div>
-            
-            <div>
-              <input type="email" placeholder="Email*" class="w-full premium-input bg-transparent text-white placeholder-gray-400 border-gray-400 focus:border-white" required />
-            </div>
-            
-            <div>
-              <textarea placeholder="Message*" rows="4" class="w-full premium-input bg-transparent text-white placeholder-gray-400 border-gray-400 focus:border-white resize-none" required></textarea>
-            </div>
-            
-            <button type="submit" class="w-full bg-brand-red text-white py-4 px-8 rounded-xl font-medium hover:bg-red-700 transition-all duration-300 hover:scale-105">
-              Send Message
-            </button>
-          </form>
-          
-          <div class="mt-12 pt-8 border-t border-gray-600">
-            <p class="text-white font-medium mb-4">Ready to discuss your specific needs?</p>
-            <a href="#" class="inline-flex items-center gap-2 text-brand-red hover:text-red-400 transition-colors duration-300">
-              Schedule a Consultation
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-              </svg>
-            </a>
-            
-            <p class="text-gray-400 mt-6">
-              Or reach me directly: <a href="mailto:me@eedeelaw.com" class="text-white hover:text-brand-red transition-colors">me@eedeelaw.com</a>
-            </p>
-          </div>
-        </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="mailto:me@eedeelaw.com" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-white text-blue-700 rounded-full hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-xl">
+          Send a Message
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </a>
+        <a href="#" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-white/20 backdrop-blur-xl text-white rounded-full border border-white/30 hover:bg-white/30 hover:scale-105 transition-all duration-300">
+          Schedule a Consultation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+        </a>
       </div>
+      
+      <p class="text-white/80">
+        Or reach me directly: <a href="mailto:me@eedeelaw.com" class="text-white font-medium hover:underline">me@eedeelaw.com</a>
+      </p>
     </div>
   </div>
 </section>

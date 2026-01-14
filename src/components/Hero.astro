@@ -1,52 +1,61 @@
 ---
 ---
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-light via-white to-brand-light">
-  <!-- Decorative background element -->
-  <div class="absolute inset-0 flex items-center justify-center opacity-5">
-    <div class="w-96 h-96 rounded-full border-8 border-brand-red transform rotate-45 parallax"></div>
-  </div>
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+  <!-- Gradient orbs for visual depth -->
+  <div class="absolute top-0 left-1/5 w-[600px] h-[600px] bg-blue-600/30 rounded-full blur-[120px]"></div>
+  <div class="absolute bottom-0 right-1/5 w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[100px]"></div>
+  <div class="absolute top-1/0 left-1/0 -translate-x-1/0 -translate-y-1/0 w-[800px] h-[800px] bg-blue-500/10 rounded-full blur-[150px]"></div>
   
-  <!-- Scattered image tiles -->
-  <div class="absolute top-20 left-10 w-48 h-64 rounded-2xl overflow-hidden shadow-2xl transform -rotate-6 parallax">
-    <img src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296685/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_11.jpg" alt="Clinical research professional" class="w-full h-full object-cover" />
-  </div>
-  
-  <div class="absolute bottom-20 right-10 w-56 h-72 rounded-2xl overflow-hidden shadow-2xl transform rotate-6 parallax">
-    <div class="w-full h-full bg-gradient-to-br from-brand-burgundy to-brand-red opacity-90"></div>
-  </div>
-  
-  <div class="absolute top-40 right-20 w-40 h-40 rounded-2xl bg-brand-red/10 transform rotate-12"></div>
-  
-  <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="text-center max-w-5xl mx-auto">
-      <div class="mb-8">
-        <span class="inline-block px-6 py-2 text-sm font-medium text-brand-red bg-red-50 rounded-full">30+ Years of Clinical Research Experience</span>
+  <!-- Navigation -->
+  <nav class="absolute top-0 left-0 right-0 z-50 px-6 py-6 md:px-12 md:py-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="/" class="block">
+        <img 
+          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" 
+          alt="EEDEE Law" 
+          class="h-10 md:h-12 w-auto"
+        />
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#approach" class="text-white/80 hover:text-white transition-colors duration-300">Our Approach</a>
+        <a href="#services" class="text-white/80 hover:text-white transition-colors duration-300">Services</a>
+        <a href="#leadership" class="text-white/80 hover:text-white transition-colors duration-300">Leadership</a>
+        <a href="#contact" class="px-6 py-2.5 bg-blue-600 text-white rounded-full hover:bg-blue-700 hover:scale-105 transition-all duration-300">Start a Conversation</a>
       </div>
-      
-      <h1 class="hero-heading font-serif text-brand-dark mb-8 hero-animate">
-        Compliance that<br />
-        <span class="text-brand-red">empowers</span>
+    </div>
+  </nav>
+  
+  <!-- Hero content -->
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <div class="animate-on-scroll">
+      <p class="text-blue-400 text-lg md:text-xl font-medium mb-6">30+ Years of Clinical Research Experience</p>
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-none mb-8">
+        Compliance that<br/>empowers
       </h1>
-      
-      <p class="text-xl md:text-2xl text-brand-gray leading-relaxed mb-12 max-w-3xl mx-auto hero-sub-animate">
-        EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. We turn compliance roadblocks into pathways forward.
+      <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed">
+        EEDEE Law bridges the gap between legal compliance and the operational realities of clinical trials.
       </p>
-      
-      <div class="flex flex-col sm:flex-row gap-4 justify-center hero-cta-animate">
-        <a href="#contact" class="btn-primary">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-blue-600 text-white rounded-full hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-600/50">
           Start a Conversation
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
         </a>
-        <a href="#services" class="btn-secondary">
-          Our Services →
+        <a href="#services" class="inline-flex items-center gap-2 px-8 py-4 text-lg font-semibold bg-white/10 backdrop-blur-xl text-white rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all duration-300">
+          Our Services
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
         </a>
       </div>
     </div>
   </div>
   
   <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/0 transform -translate-x-1/0 animate-bounce">
-    <svg class="w-6 h-6 text-brand-gray" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <div class="absolute bottom-8 left-1/0 -translate-x-1/0 animate-bounce">
+    <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
   </div>

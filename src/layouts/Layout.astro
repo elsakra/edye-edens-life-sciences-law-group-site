@@ -4,18 +4,18 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = 'EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials.' } = Astro.props;
+const { title, description = 'Edye Edens Life Sciences Law Group - Clinical research compliance that empowers. 30+ years of experience bridging legal compliance and operational realities.' } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -28,12 +28,13 @@ const { title, description = 'EEDEE Law bridges the gap between legal and regula
     <meta property="twitter:url" content="https://eedeelaw.com/" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-white text-gray-900">
     <slot />
   </body>
 </html>
-
-<style is:global>
-  @import '../styles/global.css';
-</style>
