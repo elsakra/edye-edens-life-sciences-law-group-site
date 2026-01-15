@@ -1,55 +1,87 @@
 ---
 ---
 
-<section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-zinc-950" data-hero-pattern="editorial" data-module-key="hero" data-dominant-signal="headline">
-  <!-- Background gradient with research visual -->
+<section id="home" class="relative min-h-screen overflow-hidden" data-hero-pattern="split-photo" data-module-key="hero" data-dominant-signal="image">
+  <!-- Background Image with Overlay -->
   <div class="absolute inset-0">
     <img 
-      src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_1.png" 
-      alt="Research gradient background"
-      class="absolute inset-0 w-full h-full object-cover opacity-30"
+      src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296685/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_11.jpg" 
+      alt="Edye Edens - Life Sciences Attorney"
+      class="absolute inset-0 w-full h-full object-cover object-center"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-zinc-950 to-zinc-900"></div>
+    <div class="absolute inset-0 bg-slate-950/70"></div>
   </div>
   
-  <!-- Animated gradient orbs with fade-in animation -->
-  <div class="absolute top-1/5 left-1/5 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl opacity-0 animate-fade-in" style="animation-delay: 0.5s"></div>
-  <div class="absolute bottom-1/5 right-1/5 w-80 h-80 bg-amber-400/15 rounded-full blur-3xl opacity-0 animate-fade-in" style="animation-delay: 1s"></div>
-  
-  <!-- Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
-    <div class="max-w-4xl">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 animate-on-scroll">
-        Compliance that
-        <span class="text-amber-500">empowers</span>
-      </h1>
-      <p class="text-lg leading-relaxed text-stone-100 mb-8 max-w-2xl animate-on-scroll">
-        EEDEE Law bridges the gap between legal and regulatory compliance and the operational realities of clinical trials. With over 30 years of hands-on clinical research experience, we turn compliance roadblocks into pathways forward.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 animate-on-scroll">
-        <a 
-          href="/contact" 
-          class="bg-gradient-to-br from-amber-500 to-amber-600 text-black font-semibold uppercase tracking-wider px-8 py-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2"
-          data-button-recipe="primary"
-        >
-          Start a Conversation
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+  <!-- Navigation -->
+  <nav class="relative z-20 backdrop-blur-xl bg-slate-950/30 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" 
+            alt="EEDEE Law" 
+            class="h-10 w-auto"
+          />
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#approach" class="text-slate-400 hover:text-white transition-colors duration-200">Our Approach</a>
+          <a href="#services" class="text-slate-400 hover:text-white transition-colors duration-200">Services</a>
+          <a href="#expertise" class="text-slate-400 hover:text-white transition-colors duration-200">Leadership</a>
+          <a href="/contact" class="bg-amber-400 text-slate-950 px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-amber-500 transition-all duration-200" data-button-recipe="primary">
+            Start a Conversation
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-slate-950/95 backdrop-blur-xl border-b border-white/10">
+      <div class="px-6 py-8 space-y-4">
+        <a href="#approach" class="block text-slate-400 hover:text-white transition-colors duration-200">Our Approach</a>
+        <a href="#services" class="block text-slate-400 hover:text-white transition-colors duration-200">Services</a>
+        <a href="#expertise" class="block text-slate-400 hover:text-white transition-colors duration-200">Leadership</a>
+        <a href="/contact" class="block bg-amber-400 text-slate-950 px-8 py-4 rounded-full font-bold text-center hover:bg-amber-500 transition-all duration-200">
+          Start a Conversation
         </a>
-        <a 
-          href="#services" 
-          class="border border-amber-500 text-amber-500 font-semibold uppercase tracking-wider px-8 py-4 rounded-lg hover:bg-amber-500/10 transition-all duration-300 inline-flex items-center justify-center gap-2"
-        >
-          Our Services
-        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Content -->
+  <div class="relative z-10 flex items-center min-h-[calc(100vh-5rem)]">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-20">
+      <div class="max-w-4xl">
+        <h1 class="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 animate-fade-up" data-section-header-recipe="primary">
+          Life sciences legal counsel that bridges compliance and clinical research reality
+        </h1>
+        <p class="text-xl leading-relaxed text-white/80 mb-12 animate-fade-up stagger-1">
+          30+ years of hands-on experience turning roadblocks into pathways forward.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 animate-fade-up stagger-2">
+          <a href="#services" class="bg-amber-400 text-slate-950 px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-amber-500 transition-all duration-200" data-button-recipe="primary">
+            Explore Our Services
+          </a>
+          <a href="#approach" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-white/20 transition-all duration-200 border border-white/20">
+            Learn Our Approach
+          </a>
+        </div>
       </div>
     </div>
   </div>
   
-  <!-- Scroll indicator with fade animation -->
-  <div class="absolute bottom-8 left-1/0 transform -translate-x-1/0 text-stone-100 opacity-0 animate-fade-in-down" style="animation-delay: 1.5s">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/0 -translate-x-1/0 animate-bounce">
+    <svg class="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
   </div>

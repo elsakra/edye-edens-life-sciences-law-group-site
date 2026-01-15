@@ -1,168 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout 
-  title="Contact | EEDEE Law"
-  description="Ready to turn compliance roadblocks into pathways forward? Contact EEDEE Law to discuss how we can help your organization move faster with confidence."
->
-  <Header />
-  
+<Layout title="Contact - EEDEE Law | Life Sciences Legal Counsel">
   <main>
-    <Hero 
-      title="Start a Conversation"
-      subtitle="Ready to turn compliance roadblocks into pathways forward? Let's discuss how we can help your organization move faster with confidence."
-    />
-    
-    <Contact />
-    
-    <!-- Additional Contact Info -->
-    <section class="section-spacing bg-gray-50">
-      <div class="container-custom">
-        <div class="max-w-4xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Contact Methods -->
-            <div class="fade-in">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">
-                Get in Touch
-              </h2>
-              <p class="text-gray-600 mb-8">
-                We're here to help you navigate the complex world of clinical research compliance. Reach out to discuss your specific challenges and how we can support your organization.
-              </p>
-              
-              <div class="space-y-6">
-                <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <p class="text-gray-600">Send us a message and we'll respond within 24 hours</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Response Time</h3>
-                    <p class="text-gray-600">We typically respond to inquiries within 24 hours</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start space-x-4">
-                  <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-1">Confidentiality</h3>
-                    <p class="text-gray-600">All communications are treated with strict confidentiality</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Service Areas -->
-            <div class="fade-in stagger-1">
-              <h2 class="text-2xl font-bold text-gray-900 mb-6">
-                How We Can Help
-              </h2>
-              <p class="text-gray-600 mb-8">
-                We specialize in helping organizations across the clinical research ecosystem navigate compliance challenges.
-              </p>
-              
-              <div class="space-y-4">
-                <div class="p-4 bg-white rounded-lg border border-gray-200">
-                  <h3 class="font-semibold text-gray-900 mb-2">Academic Medical Centers & HRPPs</h3>
-                  <p class="text-gray-600 text-sm">AAHRPP accreditation, IRB operations, research misconduct investigations</p>
-                </div>
-                
-                <div class="p-4 bg-white rounded-lg border border-gray-200">
-                  <h3 class="font-semibold text-gray-900 mb-2">Cancer Centers</h3>
-                  <p class="text-gray-600 text-sm">CTO quality programs, regulatory audits, PRMS and DSMC structures</p>
-                </div>
-                
-                <div class="p-4 bg-white rounded-lg border border-gray-200">
-                  <h3 class="font-semibold text-gray-900 mb-2">Independent Research Sites</h3>
-                  <p class="text-gray-600 text-sm">SOP development, audit preparation, contract negotiations</p>
-                </div>
-                
-                <div class="p-4 bg-white rounded-lg border border-gray-200">
-                  <h3 class="font-semibold text-gray-900 mb-2">Technology Vendors</h3>
-                  <p class="text-gray-600 text-sm">AI frameworks, Part 11 validation, go-to-market compliance</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Navigation -->
+    <nav class="bg-slate-950 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
+        <div class="flex items-center justify-between h-20">
+          <a href="/" class="flex items-center">
+            <img 
+              src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296682/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_0.png" 
+              alt="EEDEE Law" 
+              class="h-10 w-auto"
+            />
+          </a>
+          <a href="/" class="text-slate-400 hover:text-white transition-colors duration-200">← Back to Home</a>
         </div>
       </div>
-    </section>
+    </nav>
     
-    <!-- FAQ Section -->
-    <section class="section-spacing bg-white">
-      <div class="container-custom">
+    <!-- Contact Section -->
+    <section class="py-32 md:py-40 lg:py-48 bg-stone-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
         <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12 fade-in">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p class="text-lg text-gray-600">
-              Common questions about working with EEDEE Law
+          <h1 class="text-6xl md:text-7xl font-black tracking-tighter leading-none text-slate-950 mb-8 text-center">
+            Get in Touch
+          </h1>
+          
+          <div class="text-center mb-16">
+            <p class="text-xl text-stone-600 mb-8">
+              Ready to turn regulatory roadblocks into pathways forward? Let's discuss how we can help.
             </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+              <div class="text-center">
+                <h3 class="font-bold text-slate-950 mb-2">Email</h3>
+                <a href="mailto:me@eedeelaw.com" class="text-amber-600 hover:text-amber-700 transition-colors">me@eedeelaw.com</a>
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-slate-950 mb-2">Schedule</h3>
+                <a href="https://calendly.com/eedeelaw" class="text-amber-600 hover:text-amber-700 transition-colors">Book a Meeting</a>
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-slate-950 mb-2">Connect</h3>
+                <a href="https://www.linkedin.com/company/eedee-law/" class="text-amber-600 hover:text-amber-700 transition-colors">LinkedIn</a>
+              </div>
+            </div>
           </div>
           
-          <div class="space-y-8">
-            <div class="fade-in stagger-1">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                What makes EEDEE Law different from other legal firms?
-              </h3>
-              <p class="text-gray-600">
-                We bring over 30 years of hands-on clinical research experience. We've been in your shoes—managing HRPPs, navigating audits, building compliance systems. We don't just know the regulations; we know the workflows.
-              </p>
-            </div>
-            
-            <div class="fade-in stagger-2">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                Do you work with organizations of all sizes?
-              </h3>
-              <p class="text-gray-600">
-                Yes. We believe every organization, regardless of size, deserves counsel that understands their operational reality. We work with everything from single-site practices to multi-campus academic medical centers.
-              </p>
-            </div>
-            
-            <div class="fade-in stagger-3">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                How do you approach crisis situations like regulatory audits?
-              </h3>
-              <p class="text-gray-600">
-                We've managed OHRP and FDA audits before. We know how to move quickly, coordinate responses, and build remediation plans that actually work. We focus on solutions, not blame.
-              </p>
-            </div>
-            
-            <div class="fade-in stagger-4">
-              <h3 class="text-xl font-semibold text-gray-900 mb-3">
-                Can you help with technology integration and validation?
-              </h3>
-              <p class="text-gray-600">
-                Absolutely. We understand the intersection of technology and compliance. Whether you're implementing new IRB systems, validating AI tools, or navigating Part 11 requirements, we can help.
-              </p>
-            </div>
+          <!-- Contact Form -->
+          <div class="bg-white p-8 md:p-12 shadow-xl">
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="block text-sm font-semibold text-slate-950 mb-2">First name</label>
+                  <input type="text" id="first-name" name="first-name" class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all" />
+                </div>
+                <div>
+                  <label for="last-name" class="block text-sm font-semibold text-slate-950 mb-2">Last name</label>
+                  <input type="text" id="last-name" name="last-name" class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all" />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-950 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all" required />
+              </div>
+              
+              <div>
+                <label for="organization" class="block text-sm font-semibold text-slate-950 mb-2">Organization</label>
+                <input type="text" id="organization" name="organization" class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all" />
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-semibold text-slate-950 mb-2">How can we help?</label>
+                <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all resize-none"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full bg-amber-400 text-slate-950 px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-amber-500 transition-all duration-200">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </section>
+    
+    <Footer />
   </main>
-  
-  <Footer />
 </Layout>

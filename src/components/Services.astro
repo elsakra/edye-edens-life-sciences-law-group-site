@@ -1,206 +1,147 @@
 ---
 ---
 
-<section id="services" class="py-20 md:py-28 lg:py-32 bg-white" data-module-key="services" data-dominant-signal="diagram">
-  <div class="max-w-7xl mx-auto px-6 md:px-8">
+<section id="services" class="py-32 md:py-40 lg:py-48 bg-stone-50" data-module-key="services_overview" data-dominant-signal="diagram">
+  <div class="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-zinc-900 mb-6 animate-on-scroll" data-section-header-recipe="primary">
+      <h2 class="text-6xl md:text-7xl font-black tracking-tighter leading-none text-slate-950 mb-6 animate-on-scroll" data-section-header-recipe="primary">
         How we can help
       </h2>
-      <p class="text-lg leading-relaxed text-zinc-600 max-w-3xl mx-auto animate-on-scroll">
+      <p class="text-xl text-stone-600 animate-on-scroll stagger-1">
         We offer specialized services for sites, AMCs, HRPPs, and clinical trial tech vendors.
       </p>
     </div>
     
-    <!-- Service tabs -->
-    <div class="mb-12">
-      <div class="flex flex-wrap justify-center gap-4" role="tablist">
-        <button class="service-tab active px-6 py-3 bg-amber-500 text-black font-semibold rounded-lg transition-all duration-300" data-tab="amc">
-          Academic Medical Centers & HRPPs
-        </button>
-        <button class="service-tab px-6 py-3 bg-stone-100 text-zinc-900 font-semibold rounded-lg hover:bg-stone-200 transition-all duration-300" data-tab="cancer">
-          Cancer Centers
-        </button>
-        <button class="service-tab px-6 py-3 bg-stone-100 text-zinc-900 font-semibold rounded-lg hover:bg-stone-200 transition-all duration-300" data-tab="sites">
-          Independent Research Sites & Networks
-        </button>
-        <button class="service-tab px-6 py-3 bg-stone-100 text-zinc-900 font-semibold rounded-lg hover:bg-stone-200 transition-all duration-300" data-tab="tech">
-          Clinical Trial Technology Vendors
-        </button>
-      </div>
+    <!-- Service Tabs -->
+    <div class="space-y-8">
+      <!-- Academic Medical Centers -->
+      <details class="group bg-white rounded-none overflow-hidden animate-on-scroll stagger-1" data-card-recipe="primary">
+        <summary class="p-8 md:p-12 cursor-pointer hover:bg-stone-50 transition-colors duration-200">
+          <div class="flex items-center justify-between">
+            <h3 class="text-2xl font-bold text-slate-950">For Academic Medical Centers & HRPPs</h3>
+            <svg class="w-6 h-6 text-amber-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="px-8 md:px-12 pb-8 md:pb-12 border-t border-stone-100">
+          <p class="text-lg text-stone-600 mb-6">
+            Your HRPP is facing AAHRPP accreditation pressure while managing possible layoffs from NIH funding cuts. Institutional red tape slows everything down, and you need counsel who actually understands the difference between a RIO and COI. We've spent over a decade in academic research administration. We speak your language.
+          </p>
+          <p class="font-semibold text-slate-950 mb-4">We can help you with:</p>
+          <ul class="space-y-2 text-stone-600">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>HRPP overhauls for AAHRPP accreditation readiness and national benchmarking</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>IRB workload analyses, staffing redesigns, and policy reengineering</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Conflict of interest, research misconduct, and data privacy frameworks</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Research misconduct investigations and ORI coordination</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Clinical trial agreement negotiations and budget reviews</span>
+            </li>
+          </ul>
+        </div>
+      </details>
+      
+      <!-- Research Sites -->
+      <details class="group bg-white rounded-none overflow-hidden animate-on-scroll stagger-2" data-card-recipe="primary">
+        <summary class="p-8 md:p-12 cursor-pointer hover:bg-stone-50 transition-colors duration-200">
+          <div class="flex items-center justify-between">
+            <h3 class="text-2xl font-bold text-slate-950">For Research Sites & Networks</h3>
+            <svg class="w-6 h-6 text-amber-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="px-8 md:px-12 pb-8 md:pb-12 border-t border-stone-100">
+          <p class="text-lg text-stone-600 mb-6">
+            You're juggling sponsor demands, regulatory inspections, and keeping your best coordinators from burning out. You need practical solutions that work with your existing workflows, not theoretical frameworks that require a complete overhaul.
+          </p>
+          <p class="font-semibold text-slate-950 mb-4">We can help you with:</p>
+          <ul class="space-y-2 text-stone-600">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>FDA inspection readiness and CAPA responses</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>SOPs that your staff will actually follow</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Contract and budget negotiations with sponsors</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Compliance frameworks that scale with growth</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Staff training that sticks</span>
+            </li>
+          </ul>
+        </div>
+      </details>
+      
+      <!-- Technology Vendors -->
+      <details class="group bg-white rounded-none overflow-hidden animate-on-scroll stagger-3" data-card-recipe="primary">
+        <summary class="p-8 md:p-12 cursor-pointer hover:bg-stone-50 transition-colors duration-200">
+          <div class="flex items-center justify-between">
+            <h3 class="text-2xl font-bold text-slate-950">For Clinical Trial Technology Vendors</h3>
+            <svg class="w-6 h-6 text-amber-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </summary>
+        <div class="px-8 md:px-12 pb-8 md:pb-12 border-t border-stone-100">
+          <p class="text-lg text-stone-600 mb-6">
+            Your innovation could transform clinical trials, but regulatory uncertainty is slowing adoption. You need counsel who understands both the technology and the regulatory landscape, who can translate between engineers and compliance officers.
+          </p>
+          <p class="font-semibold text-slate-950 mb-4">We can help you with:</p>
+          <ul class="space-y-2 text-stone-600">
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>21 CFR Part 11 compliance strategies</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Privacy frameworks for global deployments</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Contract templates that sites will actually sign</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Regulatory positioning for new technologies</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-emerald-600 mt-1">✓</span>
+              <span>Risk assessments that enable innovation</span>
+            </li>
+          </ul>
+        </div>
+      </details>
     </div>
     
-    <!-- Service content -->
-    <div class="service-content" id="amc-content">
-      <div class="bg-stone-50 rounded-xl p-8 md:p-12">
-        <h3 class="text-2xl font-semibold text-zinc-900 mb-4">For Academic Medical Centers & HRPPs</h3>
-        <p class="text-lg leading-relaxed text-zinc-600 mb-6">
-          Your HRPP is facing AAHRPP accreditation pressure while managing possible layoffs from NIH funding cuts. Institutional red tape slows everything down, and you need counsel who actually understands the difference between a RIO and COI. We've spent over a decade in academic research administration. We speak your language.
-        </p>
-        <p class="font-semibold text-zinc-900 mb-4">We can help you with:</p>
-        <ul class="space-y-3 text-zinc-600">
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>HRPP overhauls for AAHRPP accreditation readiness and national benchmarking</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Clinical trial agreement negotiations that protect your institution without killing deals</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Research compliance program development that actually works with your workflows</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>FDA audit preparation and response strategies</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="service-content hidden" id="cancer-content">
-      <div class="bg-stone-50 rounded-xl p-8 md:p-12">
-        <h3 class="text-2xl font-semibold text-zinc-900 mb-4">For Cancer Centers</h3>
-        <p class="text-lg leading-relaxed text-zinc-600 mb-6">
-          You're managing complex multi-site trials while navigating NCI requirements and institutional politics. Your investigators need faster startup times, your administrators need bulletproof compliance, and everyone needs someone who understands oncology research isn't just another clinical trial.
-        </p>
-        <p class="font-semibold text-zinc-900 mb-4">We can help you with:</p>
-        <ul class="space-y-3 text-zinc-600">
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>NCI-specific compliance requirements and CCSG renewal support</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Multi-site trial agreements that protect your center while enabling collaboration</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Data sharing agreements that balance transparency with IP protection</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Investigator-initiated trial support from protocol to closeout</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="service-content hidden" id="sites-content">
-      <div class="bg-stone-50 rounded-xl p-8 md:p-12">
-        <h3 class="text-2xl font-semibold text-zinc-900 mb-4">For Independent Research Sites & Networks</h3>
-        <p class="text-lg leading-relaxed text-zinc-600 mb-6">
-          You're competing with academic centers while managing tighter margins. Every delay costs money, every compliance gap risks your reputation, and you need counsel who understands that "standard" academic timelines don't work in the real world.
-        </p>
-        <p class="font-semibold text-zinc-900 mb-4">We can help you with:</p>
-        <ul class="space-y-3 text-zinc-600">
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Rapid CTA negotiations that protect your site without killing timelines</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Site network agreements that scale without creating compliance nightmares</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>FDA inspection readiness programs designed for lean teams</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Technology vendor agreements that protect your data and your patients</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="service-content hidden" id="tech-content">
-      <div class="bg-stone-50 rounded-xl p-8 md:p-12">
-        <h3 class="text-2xl font-semibold text-zinc-900 mb-4">For Clinical Trial Technology Vendors</h3>
-        <p class="text-lg leading-relaxed text-zinc-600 mb-6">
-          You're disrupting an industry that doesn't like disruption. Your sales team promises the moon, your dev team builds rockets, and you need someone who can translate between Silicon Valley and clinical research reality.
-        </p>
-        <p class="font-semibold text-zinc-900 mb-4">We can help you with:</p>
-        <ul class="space-y-3 text-zinc-600">
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>21 CFR Part 11 compliance strategies that actually make sense</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Customer agreements that close deals without creating liability nightmares</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Privacy and security frameworks that satisfy both HIPAA and anxious IRBs</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <svg class="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>Go-to-market strategies that speak to research operations reality</span>
-          </li>
-        </ul>
-      </div>
+    <!-- Additional Image -->
+    <div class="mt-16 text-center">
+      <img 
+        src="https://res.cloudinary.com/dil14r8je/image/upload/v1768296683/auto-site-builder/Edye%20Edens%20Life%20Sciences%20Law%20Group/image_3.jpg" 
+        alt="Clinical research collaboration"
+        class="w-full max-w-4xl mx-auto rounded-lg shadow-2xl animate-on-scroll"
+      />
     </div>
   </div>
-  
-  <script>
-    // Tab switching functionality
-    document.addEventListener('DOMContentLoaded', () => {
-      const tabs = document.querySelectorAll('.service-tab');
-      const contents = document.querySelectorAll('.service-content');
-      
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          const targetTab = tab.getAttribute('data-tab');
-          
-          // Update active tab
-          tabs.forEach(t => {
-            t.classList.remove('active', 'bg-amber-500', 'text-black');
-            t.classList.add('bg-stone-100', 'text-zinc-900');
-          });
-          tab.classList.add('active', 'bg-amber-500', 'text-black');
-          tab.classList.remove('bg-stone-100', 'text-zinc-900');
-          
-          // Show corresponding content
-          contents.forEach(content => {
-            content.classList.add('hidden');
-          });
-          document.getElementById(`${targetTab}-content`).classList.remove('hidden');
-        });
-      });
-    });
-  </script>
 </section>
